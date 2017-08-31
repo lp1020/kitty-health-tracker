@@ -5,7 +5,7 @@ and it will have stats for mood, weight, bmi, blood pressure, heart rate, calori
 of the stats on the top of the page. 
 
 # Wireframe
-![img](https://github.com/lp1020/kitty-health-tracker/blob/master/project2wireframe.jpg)
+![img](https://github.com/lp1020/kitty-health-tracker/blob/master/assets/project2wireframe.jpg)
 
 ## MVP
 The structure will be similar to what we have been doing with the quotes and to-do app. I will have a welcome page that takes you to the listing 
@@ -21,6 +21,7 @@ based on any new inputs so that the user will be able to see their average weigh
 the GIPHY API to have a bunch of funny cat GIFs all over the app. If I can't get the API to work, I'll use images.
 
 ## Technologies
+* Express
 * Node
 * PSQL
 * EJS
