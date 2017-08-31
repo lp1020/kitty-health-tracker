@@ -1,7 +1,7 @@
 ## Project Schedule
 
 |  Day | Deliverable | 
-|---|---| ---|
+|---|---|
 |Day 1: Tue| App Approval|
 |Day 2: Wed| Wireframes and Project Board|
 |Day 3: Thur| MVP |
