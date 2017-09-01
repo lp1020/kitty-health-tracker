@@ -1,0 +1,39 @@
+  <!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Add Some Stats!</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+
+  <% include ../partials/header %>
+
+<form method='POST' action='/stats'>
+<input name='date' type='text' placeholder='Date'/>
+<input name='weight' type='text' placeholder='Weight'/>
+<input name='bmi' type='text' placeholder='BMI'/>
+<input name='blood_pressure' type='text' placeholder='Blood Pressure'/>
+<input name='heart_rate' type='text' placeholder='Heart Rate'/>
+<input name='calorie_intake' type='text' placeholder='Calorie Intake'/>
+<input name='hours_of_sleep' type='text' placeholder='Hours of Sleep'/>
+<input name='notes' type='text' placeholder='Notes'/>
+<label for='mood_id'> Mood
+<select name='mood_id' type='text'>
+<option value='1'>Happy</option>
+<option value='2'>Upset</option>
+<option value='3'>Angry</option>
+<option value='4'>Sleepy</option>
+<option value='5'>Annoyed</option>
+<option value='6'>Excited</option>
+<option value='7'>Anxious</option>
+<option value='8'>Sad</option>
+<option value='9'>Blah</option>
+</select>
+</label></br>
+<input type='submit' value='Submit'/>
+</form>
+
+<% include ../partials/footer %>
+</body>
+</html>

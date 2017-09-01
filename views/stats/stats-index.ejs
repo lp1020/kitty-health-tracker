@@ -1,0 +1,37 @@
+  <!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Health Tracker</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+
+  <% include ../partials/header %>
+
+  <div>
+<p><%= avgStats.weight %></p>
+  </div>
+
+  <a href="/stats/new">Add stats</a>
+  <% for (let stats of data) { %>
+    <div class='healthStats'>
+      <p><%= stats.date %></p>
+      <p><%= stats.weight %> lbs</p>
+      <p><%= stats.bmi %></p>
+      <p><%= stats.blood_pressure %></p>
+      <p><%= stats.heart_rate %> bpm</p>
+      <p><%= stats.calorie_intake %></p>
+      <p><%= stats.hours_of_sleep %></p>
+      <p><%= stats.mood %></p>
+      <a href='/stats/<%= stats.id%>'>Learn more</a>
+      <a href='/stats/<%= stats.id %>/edit'> Edit this Entry </a>
+  <form action="/stats/<%= data.id %>?_method=Delete" method="Post">
+    <input type="Submit" value="Delete"/>
+  </form>
+    </div>
+  <% } %>
+
+  <% include ../partials/footer %>
+</body>
+</html>

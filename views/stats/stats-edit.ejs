@@ -1,0 +1,41 @@
+ <!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Edit Entry</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+
+  <% include ../partials/header %>
+
+<form method='POST' action='/stats/<%= data.id %>?_method=PUT'>
+<input name="id" type="hidden" value="<%= data.id %>">
+<input name='date' type='text' value='<%= data.date %>'/>
+<input name='weight' type='text' value='<%= data.weight %>'/>
+<input name='bmi' type='text' value='<%= data.bmi %>'/>
+<input name='blood_pressure' type='text' value='<%= data.blood_pressure %>'/>
+<input name='heart_rate' type='text' value='<%= data.heart_rate %>'/>
+<input name='calorie_intake' type='text' value='<%= data.calorie_intake %>'/>
+<input name='hours_of_sleep' type='text' value='<%= data.hours_of_sleep %>'/>
+<input name='notes' type='text' value='<%= data.notes %>'/>
+<label for='mood_id'> Mood
+    <select name='mood_id' type='text'>
+      <option value='1'>Happy</option>
+      <option value='2'>Upset</option>
+      <option value='3'>Angry</option>
+      <option value='4'>Sleepy</option>
+      <option value='5'>Annoyed</option>
+      <option value='6'>Excited</option>
+      <option value='7'>Anxious</option>
+      <option value='8'>Sad</option>
+      <option value='9'>Blah</option>
+    </select>
+    </label></br>
+  <input type='submit' value='Submit!'/>
+</form>
+
+
+  <% include ../partials/footer %>
+</body>
+</html>

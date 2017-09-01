@@ -3,6 +3,7 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const path = require('path');
 const methodOverride = require('method-override');
+const request = require('request');
 
 const statsRouter = require('./routes/stats-routes');
 
@@ -23,13 +24,12 @@ app.use(methodOverride('_method'));
 
 app.use('/stats', statsRouter);
 
-
 app.get('/', (req, res) => {
   res.render('index', {
     message: 'Welcome!',
     logoName: 'Kitty Health Tracker',
     statsLink: 'Go to tracker',
-  });
+  })
 });
 
 app.listen(PORT, () => {
