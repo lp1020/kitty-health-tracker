@@ -3,12 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>To Do App</title>
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
 </head>
 <body>
 <% include ./partials/header.ejs %>
 
 <h2 id="welcome"><%= message %></h2>
+<img src="<%= gif_1 %>"/>
+ <!-- <img src="gif_1"/>Gif 1 -->
+<!-- <iframe src="https://giphy.com/embed/WqmYGa2LjQlTG" width="480" height="329" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cat-funny-WqmYGa2LjQlTG"></a></p>
+<iframe src="https://giphy.com/embed/5wWf7H5pp15X4yOr2ik" width="480" height="247" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/5wWf7H5pp15X4yOr2ik"></a></p>
+<iframe src="https://giphy.com/embed/IESUNskfcvVC0" width="480" height="381" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cat-kitten-exercise-IESUNskfcvVC0"></a></p> -->
 
 
 <a href="/stats" class="button"><%= statsLink %></a>
@@ -18,5 +27,6 @@
 
 
 <% include ./partials/footer.ejs %>
+<script src="/src/main.js"></script>
 </body>
 </html>

@@ -22,13 +22,15 @@
   "homepage": "https://github.com/lp1020/kitty-health-tracker#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "dotenv": "^4.0.0",
     "ejs": "^2.5.7",
     "express": "^4.15.4",
     "method-override": "^2.3.9",
     "morgan": "^1.8.2",
     "path": "^0.12.7",
     "pg-promise": "^6.5.1",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.4"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
