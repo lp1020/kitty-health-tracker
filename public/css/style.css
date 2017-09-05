@@ -9,7 +9,6 @@ body {
 
 #index-header {
   background-color: #E8A87C;
-  width: 1200px;
   height: 100px;
   margin-left: -20px;
 }
@@ -81,7 +80,7 @@ body {
   background-color: #638EB6;
  font-family: 'Pacifico', cursive;
  margin-top: 100px;
- margin-left: 475px;
+ margin-left: 500px;
  font-size: 24px;
  border: 4px dotted #f2cca6;
 
