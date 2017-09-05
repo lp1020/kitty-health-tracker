@@ -1,3 +1,537 @@
 body {
-  background-color: lightGreen;
+  background-color: #41B3A3;
+}
+
+.logo {
+  font-family: 'Acme', sans-serif;
+  text-decoration: none;
+}
+
+#index-header {
+  background-color: #E8A87C;
+  width: 1200px;
+  height: 100px;
+  margin-left: -20px;
+}
+
+#index-header h1 {
+  float: left;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 50px;
+
+}
+
+#index-header h1 a {
+  text-decoration: none;
+  color: #638EB6;
+}
+
+#index-header h1 a:hover {
+  color: #C38D9E;
+}
+
+#index-header nav {
+  float: right;
+  color: #E27D60;
+}
+
+#index-header nav li {
+  float: left;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+
+#index-header nav a {
+  display: block;
+  padding: 20px 0px 30px 15px;
+  margin-right: 60px;
+  text-decoration: none;
+  color: #638EB6;
+}
+#index-header nav li a:hover {
+  color: #C38D9E;
+}
+
+#welcome {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 300px;
+  background-color: #f2cca6;
+  font-family: 'Pacifico', cursive;
+  font-size: 52px;
+  color: #C38D9E;
+  border: 4px solid #E27D60;
+  border-radius: 50px;
+}
+
+.homeGif {
+  display: block;
+  margin-top: 100px;
+  border-radius: 50px;
+}
+
+#statsLink {
+  float: left;
+  color: #f2cca6;
+  padding: 5px;
+  text-decoration: none;
+  background-color: #638EB6;
+ font-family: 'Pacifico', cursive;
+ margin-top: 100px;
+ margin-left: 475px;
+ font-size: 24px;
+ border: 4px dotted #f2cca6;
+
+}
+
+#statsLink:hover {
+  color: #E27D60;
+}
+footer {
+  margin-top: 480px;
+  padding: 0px;
+  background-color: #E8A87C;
+  height: 50px;
+}
+footer h2 {
+  font-family: 'Acme', sans-serif;
+  padding: 10px;
+  color: #638EB6;
+}
+
+#indexGif1 {
+  float: left;
+margin-top: 90px;
+margin-left: -400px;
+}
+
+#indexGif2 {
+  position: absolute;
+  margin: 0 auto;
+margin-top: 50px;
+margin-left: 80px;
+
+}
+
+#indexGif3 {
+  float: right;
+margin-top: 70px;
+margin-right: 70px;
+}
+
+.averagesDiv {
+  width: 350px;
+  margin-top: 350px;
+  margin-left: 450px;
+  padding: 10px;
+  background-color: #C38D9E;
+  border-radius: 50px;
+  border: 5px dotted #638EB6;
+
+}
+.averageTitle {
+   text-align: center;
+   margin-left: -80px;
+font-family: 'Bree Serif', serif;
+font-size: 18px;
+color: #f2cca6;
+
+}
+
+.averageInfo {
+text-align: center;
+margin-top: -40px;
+margin-left: 170px;
+font-family: 'Bree Serif', serif;
+font-size: 18px;
+color: #E8A87C;
+
+}
+.addStats {
+  position: absolute;
+text-decoration: none;
+font-family: 'Acme', sans-serif;
+color: #E8A87C;
+font-size: 36px;
+padding: 10px;
+background-color: #638EB6;
+border-radius: 50px;
+border: 4px dotted white;
+margin-top: -170px;
+margin-left: 80px;
+}
+
+.addStats:hover {
+  color: #E27D60;
+}
+
+.healthStats {
+  background-color: #E27D60;
+  display: flex;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  border-radius: 50px;
+  border-bottom: 2px solid white;
+}
+
+.statsTitle {
+  font-family: 'Bree Serif', serif;
+font-size: 14px;
+align-items: center;
+justify-content: space-between;
+margin-left: 10px;
+color: #f2cca6;
+
+}
+
+.statsInfo {
+  font-family: 'Bree Serif', serif;
+font-size: 14px;
+align-items: center;
+margin-left: 10px;
+color: white;
+}
+
+#learnMore {
+text-decoration: none;
+font-family: 'Pacifico', cursive;
+font-size: 16px;
+margin-top: 10px;
+margin-left: 20px;
+padding: 2px;
+color: #C38D9E;
+background-color: #f2cca6;
+border-radius: 50px;
+}
+
+#learnMore:hover {
+  color: #41B3A3;
+}
+
+#editLink {
+text-decoration: none;
+font-family: 'Pacifico', cursive;
+font-size: 16px;
+margin-top: 10px;
+margin-left: 20px;
+color: #C38D9E;
+padding: 2px;
+background-color: #f2cca6;
+border-radius: 50px;
+}
+
+#editLink:hover {
+  color: #41B3A3;
+}
+
+#indexGif4 {
+ position: absolute;
+margin-top: 50px;
+margin-left: 50px;
+}
+
+#indexGif5 {
+  position: absolute;
+  margin: 0 auto;
+margin-top: 50px;
+margin-left: 500px;
+
+}
+
+#indexGif6 {
+ position: absolute;
+margin-top: 30px;
+margin-left: 1000px;
+}
+
+.addGifs {
+  display: flex;
+}
+
+.addGif {
+  justify-content: space-around;
+}
+#addGif1 {
+
+  margin-top: 50px;
+  margin-left: -350px;
+
+}
+
+#addGif2 {
+
+  margin-top: 70px;
+  margin-left: 70px;
+
+}
+
+#addGif3 {
+  float: right;
+margin-top: 30px;
+margin-left: 80px;
+
+}
+
+.statsInput {
+  height: 50px;
+  width: 137px;
+  font-size: 14px;
+  background-color: #E8A87C;
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  color: #638EB6;
+}
+
+#moodTitle {
+margin-top: 50px;
+margin-left: 450px;
+padding: 7px;
+font-family: 'Bree Serif', serif;
+font-size: 18px;
+color: #f2cca6;
+background-color: #638EB6;
+border-radius: 50px;
+}
+
+#moodInfo {
+margin-top: 50px;
+margin-left: 5px;
+font-family: 'Bree Serif', serif;
+font-size: 18px;
+color: #C38D9E;
+
+}
+
+.submitButton {
+  width: 80px;
+  height: 50px;
+  margin-top: 80px;
+  margin-left: 500px;
+  background-color: #C38D9E;
+  font-family: 'Pacifico', cursive;
+  font-size: 18px;
+  color: white;
+  border: 4px dotted #f2cca6;
+
+}
+
+.submitButton:hover {
+  color: #638EB6;
+}
+
+#addGif4 {
+  margin-top: 150px;
+margin-left: 50px;
+}
+
+#addGif5 {
+  margin-top: 150px;
+margin-left: 30px;
+}
+
+#addGif6 {
+  margin-top: 150px;
+margin-left: -20px;
+}
+
+#editGif1 {
+
+  margin-top: 90px;
+  margin-left: -350px;
+
+}
+
+#editGif2 {
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-left: 40px;
+
+}
+
+#editGif3 {
+  position: absolute;
+margin-top: 80px;
+margin-left: 400px;
+
+}
+
+#editGif4 {
+  margin-top: 150px;
+margin-left: 20px;
+}
+
+#editGif5 {
+  margin-top: 150px;
+margin-left: 0px;
+}
+
+#editGif6 {
+  margin-top: 150px;
+margin-left: 50px;
+}
+
+.statsInputEdit {
+  height: 50px;
+  width: 150px;
+  font-size: 14px;
+  background-color: #E8A87C;
+  margin-top: 120px;
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  color: #638EB6;
+}
+
+
+#inputDateEdit {
+  position: absolute;
+  margin-top: 50px;
+}
+
+.deleteButton {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  margin-top: -150px;
+  margin-left: 800px;
+  background-color: #f2cca6;
+  font-family: 'Pacifico', cursive;
+  font-size: 18px;
+  color: #C38D9E;
+  border: 4px dotted #638EB6;
+
+}
+
+.deleteButton:hover {
+  color: #E27D60;
+}
+
+#singleGif1 {
+  position: absolute;
+margin-top: 50px;
+margin-left: -400px;
+}
+
+#singleGif2 {
+position: absolute;
+margin-top: 50px;
+
+}
+
+#singleGif3 {
+position: absolute;
+margin-top: 50px;
+margin-left: 300px;
+}
+
+.healthStatsSingle {
+  margin: 0 auto;
+  width: 500px;
+background-color: #E27D60;
+padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 400px;
+  border-radius: 50px;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+
+.statsSingle {
+display: inline-block;
+margin-top: -10px;
+margin-left: -180px;
+font-family: 'Bree Serif', serif;
+font-size: 17px;
+color: #f2cca6;
+}
+
+.singleInfo {
+  margin-top: -40px;
+margin-left: 130px;
+font-family: 'Bree Serif', serif;
+font-size: 17px;
+color: white;
+}
+
+#editLinkSingle {
+  text-align: center;
+  position: absolute;
+  height: 50px;
+  width: 200px;
+text-decoration: none;
+font-family: 'Pacifico', cursive;
+font-size: 24px;
+margin-top: -210px;
+margin-left: 40px;
+color: #C38D9E;
+background-color: #f2cca6;
+border-radius: 50px;
+border: 4px dotted white;
+}
+
+#editLinkSingle:hover {
+  color: #638EB6;
+}
+
+#deleteButton {
+position: absolute;
+text-align: center;
+  height: 50px;
+  width: 200px;
+  margin-top: -200px;
+  margin-left: 900px;
+  background-color: #E8A87C;
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  color: #638EB6;
+  border: 4px dotted #f2cca6;
+}
+
+#deleteButton:hover {
+color: #C38D9E;
+}
+
+#allEntries {
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: 500px;
+  background-color: #C38D9E;
+  font-family: 'Pacifico', cursive;
+  padding: 5px;
+  font-size: 24px;
+  color: white;
+  border-radius: 90px;
+  border: 4px dotted #638EB6;
+}
+
+#allEntries:hover {
+  color: #E8A87C;
+}
+
+#singleGif4 {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 0px;
+
+
+}
+
+#singleGif5 {
+position: absolute;
+  margin-top: 200px;
+  margin-left: 770px;
+}
+
+#singleGif6 {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 360px;
+
 }

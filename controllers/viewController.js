@@ -9,12 +9,14 @@ module.exports = {
   },
 
   showStats(req, res) {
-    res.render('stats/stats-index', {
-      data: res.locals.stats,
-      avgData: res.locals.avgStats,
-      logoName: 'Kitty Health Tracker',
-    });
-  },
+    // finally render our index, and pass the response url to it
+      res.render('stats/stats-index', {
+        data: res.locals.stats,
+        avgData: res.locals.avgStats,
+        logoName: 'Kitty Health Tracker',
+      })
+
+},
 
   showOne(req, res) {
     res.render('stats/stats-single', {

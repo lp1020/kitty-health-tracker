@@ -4,22 +4,28 @@
   <meta charset="utf-8">
   <title>Add Some Stats!</title>
   <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Pacifico" rel="stylesheet">
 </head>
 <body>
 
   <% include ../partials/header %>
-
+<div class="addGifs">
+  <iframe src="https://giphy.com/embed/a2SR6Ag8ChUlO" width="380" height="223" frameBorder="0" class="gifs" class="addGif" id="addGif1"></iframe>
+  <iframe src="https://giphy.com/embed/oUmBwN6mihDY4" width="380" height="170" frameBorder="0" class="gifs" class="addGif" id="addGif2"></iframe>
+  <iframe src="https://giphy.com/embed/tT0wtdSJvE0Rq" width="280" height="244" frameBorder="0" class="gifs" class="addGif" id="addGif3"></iframe>
+</div>
 <form method='POST' action='/stats'>
-<input name='date' type='text' placeholder='Date'/>
-<input name='weight' type='text' placeholder='Weight'/>
-<input name='bmi' type='text' placeholder='BMI'/>
-<input name='blood_pressure' type='text' placeholder='Blood Pressure'/>
-<input name='heart_rate' type='text' placeholder='Heart Rate'/>
-<input name='calorie_intake' type='text' placeholder='Calorie Intake'/>
-<input name='hours_of_sleep' type='text' placeholder='Hours of Sleep'/>
-<input name='notes' type='text' placeholder='Notes'/>
-<label for='mood_id'> Mood
-<select name='mood_id' type='text'>
+<input name='date' type='text' placeholder='Date' class='statsInput' id='inputDate'/>
+<input name='weight' type='text' placeholder='Weight' class='statsInput' id='inputWeight'/>
+<input name='bmi' type='text' placeholder='BMI' class='statsInput' id='inputbmi'/>
+<input name='blood_pressure' type='text' placeholder='Blood Pressure' class='statsInput' id='inputBP'/>
+<input name='heart_rate' type='text' placeholder='Heart Rate' class='statsInput' id='inputHeartRate'/>
+<input name='calorie_intake' type='text' placeholder='Calorie Intake' class='statsInput' id='inputCals'/>
+<input name='hours_of_sleep' type='text' placeholder='Hours of Sleep' class='statsInput' id='inputSleep'/>
+<input name='notes' type='text' placeholder='Notes' class='statsInput' id='inputNotes'/>
+<br>
+<label for='mood_id' id='moodTitle'> Mood:
+<select name='mood_id' type='text' id="moodInfo">
 <option value='1'>Happy</option>
 <option value='2'>Upset</option>
 <option value='3'>Angry</option>
@@ -31,8 +37,12 @@
 <option value='9'>Blah</option>
 </select>
 </label></br>
-<input type='submit' value='Submit'/>
+<input type='submit' value='Submit' class="submitButton"/>
 </form>
+
+<iframe src="https://giphy.com/embed/AxVvk6I9dIuu8lN6Ug" width="280" height="170" frameBorder="0" class="gifs" class="addGif" id="addGif4"></iframe>
+<iframe src="https://giphy.com/embed/PKpLzkpk3k6eQ" width="380" height="209" frameBorder="0" class="gifs" class="addGif" id="addGif5"></iframe>
+<iframe src="https://giphy.com/embed/vFKqnCdLPNOKc" width="360" height="159" frameBorder="0" class="gifs" class="addGif" id="addGif6"></iframe>
 
 <% include ../partials/footer %>
 </body>

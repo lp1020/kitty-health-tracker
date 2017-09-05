@@ -1,6 +1,4 @@
-// SELECT * FROM healthStats
-// INNER JOIN moods ON healthStats.mood_id=moods.id
-// ORDER BY healthStats.id;
+
 const pgp = require('pg-promise')();
 const dbConfig = require('../config/dbConfig');
 
@@ -31,7 +29,7 @@ module.exports = {
   average() {
     return db.one(`
       SELECT ROUND (AVG(weight)) AS weight, ROUND (AVG(bmi)) AS bmi, ROUND (AVG(heart_rate)) AS heart_rate,
-      ROUND (AVG(calorie_intake)) AS calorie_intake, ROUND (AVG(heart_rate)) AS heart_rate,
+      ROUND (AVG(calorie_intake)) AS calorie_intake,
       ROUND (AVG(hours_of_sleep)) AS hours_of_sleep FROM healthStats;
       `)
   },

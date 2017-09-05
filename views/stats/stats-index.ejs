@@ -4,34 +4,48 @@
   <meta charset="utf-8">
   <title>Health Tracker</title>
   <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Pacifico" rel="stylesheet">
 </head>
 <body>
 
   <% include ../partials/header %>
 
-  <div>
-<p><%= avgStats.weight %></p>
+  <div id="gifDiv1">
+
+  <iframe src="https://giphy.com/embed/IESUNskfcvVC0" width="300" height="200" frameBorder="0" class="gifs" class="indexGif" id="indexGif1"></iframe>
+  <iframe src="https://giphy.com/embed/ABljb8wjrOYGA" width="260" height="260" frameBorder="0" class="gifs" class="indexGif" id="indexGif2"></iframe>
+  <iframe src="https://giphy.com/embed/JLPG8PAShmVB6" width="280" height="240" frameBorder="0" class="gifs" class="indexGif" id="indexGif3"></iframe>
+</div>
+
+<div class="averagesDiv">
+<p class="averageTitle">Average weight: </p><p class="averageInfo"><%= avgStats.weight %> lbs.</p>
+<p class="averageTitle">Average BMI: </p><p class="averageInfo"><%= avgStats.bmi %></p>
+<p class="averageTitle">Average heart rate: </p><p class="averageInfo"><%= avgStats.heart_rate %> bpm</p>
+<p class="averageTitle">Average daily calories: </p><p class="averageInfo"><%= avgStats.calorie_intake %></p>
+<p class="averageTitle">Average sleep per night: </p><p class="averageInfo"><%= avgStats.hours_of_sleep %> hrs</p>
   </div>
 
-  <a href="/stats/new">Add stats</a>
+  <a href="/stats/new" class="addStats">Add stats!</a>
   <% for (let stats of data) { %>
     <div class='healthStats'>
-      <p><%= stats.date %></p>
-      <p><%= stats.weight %> lbs</p>
-      <p><%= stats.bmi %></p>
-      <p><%= stats.blood_pressure %></p>
-      <p><%= stats.heart_rate %> bpm</p>
-      <p><%= stats.calorie_intake %></p>
-      <p><%= stats.hours_of_sleep %></p>
-      <p><%= stats.mood %></p>
-      <a href='/stats/<%= stats.id%>'>Learn more</a>
-      <a href='/stats/<%= stats.id %>/edit'> Edit this Entry </a>
-  <form action="/stats/<%= data.id %>?_method=Delete" method="Post">
-    <input type="Submit" value="Delete"/>
+      <p class="statsTitle">Date: </p><p class="statsInfo"><%= stats.date %></p>
+      <p class="statsTitle">Weight: </p><p class="statsInfo"><%= stats.weight %> lbs</p>
+      <p class="statsTitle">BMI: </p><p class="statsInfo"><%= stats.bmi %></p>
+      <p class="statsTitle">Blood Pressure: </p><p class="statsInfo"><%= stats.blood_pressure %></p>
+      <p class="statsTitle">Heart Rate: </p><p class="statsInfo"><%= stats.heart_rate %> bpm</p>
+      <p class="statsTitle">Calorie Intake: </p><p class="statsInfo"><%= stats.calorie_intake %></p>
+      <p class="statsTitle">Hours of Sleep: </p><p class="statsInfo"><%= stats.hours_of_sleep %></p>
+      <p class="statsTitle">Mood: </p><p class="statsInfo"><%= stats.mood %></p>
+      <a href='/stats/<%= stats.id%>' id="learnMore">Learn more</a>
+      <a href='/stats/<%= stats.id %>/edit' id="editLink"> Edit this Entry </a>
   </form>
     </div>
   <% } %>
-
+  <div id="gifDiv2">
+  <iframe src="https://giphy.com/embed/cfUzgscq2Cpgc" width="280" height="255" frameBorder="0" class="gifs" class="indexGif" id="indexGif4"></iframe>
+  <iframe src="https://giphy.com/embed/UZai3t6C9jsT6" width="280" height="255" frameBorder="0" class="gifs" class="indexGif" id="indexGif5"></iframe>
+  <iframe src="https://giphy.com/embed/jUzFUtVSGSPy8" width="200" height="280" frameBorder="0" class="gifs" class="indexGif" id="indexGif6"></iframe>
+  </div>
   <% include ../partials/footer %>
 </body>
 </html>

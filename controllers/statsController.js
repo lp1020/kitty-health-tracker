@@ -57,7 +57,6 @@ module.exports = {
   },
 
   update(req, res, next) {
-    console.log(req.body, 'update controller');
     statsDB.update(req.body)
     .then((stats) => {
       res.locals.stats = stats;

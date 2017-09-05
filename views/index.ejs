@@ -2,8 +2,9 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8">
-  <title>To Do App</title>
+  <title>Kitty Health Tracker1</title>
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Pacifico" rel="stylesheet">
   <script
   src="http://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -13,14 +14,13 @@
 <% include ./partials/header.ejs %>
 
 <h2 id="welcome"><%= message %></h2>
-<img src="<%= gif_1 %>"/>
- <!-- <img src="gif_1"/>Gif 1 -->
-<!-- <iframe src="https://giphy.com/embed/WqmYGa2LjQlTG" width="480" height="329" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cat-funny-WqmYGa2LjQlTG"></a></p>
-<iframe src="https://giphy.com/embed/5wWf7H5pp15X4yOr2ik" width="480" height="247" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/5wWf7H5pp15X4yOr2ik"></a></p>
-<iframe src="https://giphy.com/embed/IESUNskfcvVC0" width="480" height="381" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cat-kitten-exercise-IESUNskfcvVC0"></a></p> -->
+
+<iframe src="<%= gifUrl2 %>" width="325" height="147" frameBorder="0" class="gifs" class="homeGif" id="homeGif1"></iframe>
+<iframe src="<%= gifUrl1 %>" width="425" height="200" frameBorder="0" class="gifs" class="homeGif" id="homeGif2"></iframe>
+<iframe src="<%= gifUrl3 %>" width="325" height="161" frameBorder="0" class="gifs" class="homeGif" id="homeGif3"></iframe>
 
 
-<a href="/stats" class="button"><%= statsLink %></a>
+<a href="/stats" id="statsLink"><%= statsLink %></a>
 
 
 

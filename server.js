@@ -25,21 +25,21 @@ app.use(methodOverride('_method'));
 
 app.use('/stats', statsRouter);
 
-// app.get('/', (req, res) => {
-
-//   request("http://api.giphy.com/v1/gifs/search?q=cat-fitness&api_key=5c90517748c940f7898e6f3b2c7ca995&limit=5")
-//   .then(gifs => res.send(gifs))
-//   // .then(gifs => res.send(gifs.data[0].images.original.url))
-//   .catch(err => res.json(err));
-// })
-
 
 app.get('/', (req, res) => {
-  res.render('index', {
-    message: 'Welcome!',
-    logoName: 'Kitty Health Tracker',
-    statsLink: 'Go to tracker',
-  })
+  request("http://api.giphy.com/v1/gifs/search?q=cat-fitness&api_key=5c90517748c940f7898e6f3b2c7ca995&limit=3")
+    .then((response) => {
+      response = JSON.parse(response);
+      res.render('index', {
+        message: 'Welcome!',
+        logoName: 'Kitty Health Tracker',
+        statsLink: 'Go to tracker',
+        gifUrl1: response.data[0].embed_url,
+        gifUrl2: response.data[1].embed_url,
+        gifUrl3: response.data[2].embed_url,
+      })
+    })
+    .catch(err => res.json(err));
 });
 
 

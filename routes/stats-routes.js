@@ -1,6 +1,7 @@
 const statsRouter = require('express').Router();;
 const controller = require('../controllers/statsController');
 const views = require('../controllers/viewController');
+const gifs = require('../controllers/giphyController');
 
 statsRouter.get('/:id/edit', controller.getOne, views.showEditForm, views.show404);
 

@@ -4,23 +4,29 @@
   <meta charset="utf-8">
   <title>Edit Entry</title>
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Pacifico" rel="stylesheet">
 </head>
 <body>
 
   <% include ../partials/header %>
 
+  <iframe src="https://giphy.com/embed/3o7btPYDFhb7rNANqw" width="300" height="200" frameBorder="0" class="gifs" class="editGif" id="editGif1"></iframe>
+  <iframe src="https://giphy.com/embed/yFQ0ywscgobJK" width="298" height="280" frameBorder="0" class="gifs" class="editGif" id="editGif2"></iframe>
+  <iframe src="https://giphy.com/embed/P4EO3u0apt3PO" width="280" height="200" frameBorder="0" class="gifs" class="editGif" id="editGif3"></iframe>
+
+
 <form method='POST' action='/stats/<%= data.id %>?_method=PUT'>
-<input name="id" type="hidden" value="<%= data.id %>">
-<input name='date' type='text' value='<%= data.date %>'/>
-<input name='weight' type='text' value='<%= data.weight %>'/>
-<input name='bmi' type='text' value='<%= data.bmi %>'/>
-<input name='blood_pressure' type='text' value='<%= data.blood_pressure %>'/>
-<input name='heart_rate' type='text' value='<%= data.heart_rate %>'/>
-<input name='calorie_intake' type='text' value='<%= data.calorie_intake %>'/>
-<input name='hours_of_sleep' type='text' value='<%= data.hours_of_sleep %>'/>
-<input name='notes' type='text' value='<%= data.notes %>'/>
-<label for='mood_id'> Mood
-    <select name='mood_id' type='text'>
+<input name="id" type="hidden" value="<%= data.id %>"/>
+<input name='date' type='text' value='<%= data.date %>' class='statsInputEdit' id='inputDateEdit'/></p>
+<input name='weight' type='text' value='<%= data.weight %>' class='statsInputEdit' id='inputWeight'/>
+<input name='bmi' type='text' value='<%= data.bmi %>' class='statsInputEdit' id='inputbmi'/>
+<input name='blood_pressure' type='text' value='<%= data.blood_pressure %>' class='statsInputEdit' id='inputBP'/>
+<input name='heart_rate' type='text' value='<%= data.heart_rate %>' class='statsInputEdit' id='inputHeartRate'/>
+<input name='calorie_intake' type='text' value='<%= data.calorie_intake %>' class='statsInputEdit' id='inputCals'/>
+<input name='hours_of_sleep' type='text' value='<%= data.hours_of_sleep %>' class='statsInputEdit' id='inputSleep'/>
+<input name='notes' type='text' value='<%= data.notes %>' class='statsInputEdit' id='inputNotes'/>
+<label for='mood_id' id='moodTitle'> Mood:
+    <select name='mood_id' type='text' id="moodInfo">
       <option value='1'>Happy</option>
       <option value='2'>Upset</option>
       <option value='3'>Angry</option>
@@ -32,9 +38,13 @@
       <option value='9'>Blah</option>
     </select>
     </label></br>
-  <input type='submit' value='Submit!'/>
+  <input type='submit' value='Submit!' class="submitButton"/>
 </form>
-
+<form action="/stats/<%= data.id %>?_method=Delete" method="Post">
+    <input type="Submit" value="Delete This Entry" class="deleteButton"/>
+<iframe src="https://giphy.com/embed/A6TUsdA5h1pIc" width="300" height="280" frameBorder="0" class="gifs" class="editGif" id="editGif4"></iframe>
+<iframe src="https://giphy.com/embed/yAqdjThdDEMF2" width="380" height="194" frameBorder="0" class="gifs" class="editGif" id="editGif5"></iframe>
+<iframe src="https://giphy.com/embed/6uMqzcbWRhoT6" width="380" height="260" frameBorder="0" class="gifs" class="editGif" id="editGif6"></iframe>
 
   <% include ../partials/footer %>
 </body>

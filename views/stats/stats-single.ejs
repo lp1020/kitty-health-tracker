@@ -4,27 +4,37 @@
   <meta charset="utf-8">
   <title>Add Some Stats!</title>
   <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Pacifico" rel="stylesheet">
 </head>
 <body>
 
   <% include ../partials/header %>
 
-<div class='healthStats'>
-      <p><%= stats.date %></p>
-      <p><%= stats.weight %> lbs</p>
-      <p><%= stats.bmi %></p>
-      <p><%= stats.blood_pressure %></p>
-      <p><%= stats.heart_rate %> bpm</p>
-      <p><%= stats.calorie_intake %></p>
-      <p><%= stats.hours_of_sleep %></p>
-      <p><%= stats.mood %></p>
-      <p><%= stats.notes %></p>
-  <a href="/stats/<%= data.id %>/edit"> Edit this Entry </a>
+  <iframe src="https://giphy.com/embed/25wf0elA5HS5W" width="380" height="172" frameBorder="0" class="gifs" class="singleGif" id="singleGif1"></iframe>
+    <iframe src="https://giphy.com/embed/WXsBoyhdPB6Cc" width="280" height="280" frameBorder="0" class="gifs" class="singleGif" id="singleGif2"></iframe>
+  <iframe src="https://giphy.com/embed/u11YVvPIY9giI" width="380" height="170" frameBorder="0" class="gifs" class="singleGif" id="singleGif3"></iframe>
+
+
+<div class='healthStatsSingle'>
+      <p class="statsSingle">Date: </p><p class="singleInfo"><%= stats.date %></p>
+      <p class="statsSingle">Weight: </p><p class="singleInfo"><%= stats.weight %> lbs</p>
+      <p class="statsSingle">BMI: </p><p class="singleInfo"><%= stats.bmi %></p>
+      <p class="statsSingle">Blood Pressure: </p><p class="singleInfo"><%= stats.blood_pressure %></p>
+      <p class="statsSingle">Heart Rate: </p><p class="singleInfo"><%= stats.heart_rate %> bpm</p>
+      <p class="statsSingle">Calorie Intake: </p><p class="singleInfo"><%= stats.calorie_intake %></p>
+      <p class="statsSingle">Sleep: </p><p class="singleInfo"><%= stats.hours_of_sleep %></p>
+      <p class="statsSingle">Mood: </p><p class="singleInfo"><%= stats.mood %></p>
+      <p class="statsSingle">Notes: </p><p class="singleInfo"><%= stats.notes %></p>
+      </div>
+  <a href="/stats/<%= data.id %>/edit" id="editLinkSingle"> Edit this Entry </a>
   <form action="/stats/<%= data.id %>?_method=Delete" method="Post">
-    <input type="Submit" value="Delete"/>
+    <input type="Submit" value="Delete This Entry" id="deleteButton"/>
   </form>
-  <a href='/stats/'>See all Entries</a>
-</div>
+  <a href='/stats/' id="allEntries">See all Entries</a>
+
+<iframe src="https://giphy.com/embed/vlUCWLGF7jpwA" width="280" height="235" frameBorder="0" class="gifs" class="singleGif" id="singleGif4"></iframe>
+<iframe src="https://giphy.com/embed/NjevnbNiUmeLm" width="380" height="260" frameBorder="0" class="gifs" class="singleGif" id="singleGif5"></iframe>
+<iframe src="https://giphy.com/embed/Q56ZI04r6CakM" width="380" height="247" frameBorder="0" class="gifs" class="singleGif" id="singleGif6"></iframe>
 
 
   <% include ../partials/footer %>
