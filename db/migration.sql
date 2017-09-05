@@ -1,4 +1,4 @@
-\c health_stats_dev;
+-- \c health_stats_dev;
 DROP TABLE IF EXISTS healthStats;
 DROP TABLE IF EXISTS moods;
 

@@ -1,4 +1,4 @@
-\c health_stats_dev;
+-- \c health_stats_dev;
 INSERT INTO moods (mood) VALUES
 ('Happy'),
 ('Upset'),
