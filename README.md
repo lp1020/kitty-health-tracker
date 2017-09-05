@@ -33,3 +33,6 @@ The app is a CRUD-based web application with create, read, update, and delete fu
   
   ## Issues and Resolutions
   My biggest issue was definitely trying to employ the API from the back-end. Luckily, I had a lot of help to get it to work, but I'd still like to employ the use of the API throughout the other pages, as well as being able to hide my API key in my env. file.
+  
+  ## Link to App
+  [Kitty Health Tracker](https://still-sands-67132.herokuapp.com/)
