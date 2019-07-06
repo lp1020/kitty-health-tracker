@@ -1,7 +1,7 @@
 # kitty-health-tracker
 
 ## Project Description
-I made a kitty health tracker app, which tracks daily health stats and displays averages of the stats so that you can continually track your progress. I wnated to create this because I know health is very important to most people right now, so I thought it would be very useful to be able to see your progress if you are trying to lose weight, count calories, or monitor your heart rate or blood pressure readings. I made it kitty themed because I have four cats, and who doesn't love funny cat GIFs?! 
+I made a kitty health tracker app, which tracks daily health stats and displays averages of the stats so that you can continually track your progress. I wanted to create this because I know health is very important to most people right now, so I thought it would be very useful to be able to see your progress if you are trying to lose weight, count calories, or monitor your heart rate or blood pressure readings. I made it kitty themed because I have four cats, and who doesn't love funny cat GIFs?! 
 
 ## Wireframes
 ![img](https://github.com/lp1020/kitty-health-tracker/blob/master/assets/project2wireframe.jpg) 
